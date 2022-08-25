@@ -26,7 +26,7 @@ namespace azure_sql_app.services
             // builder.InitialCatalog = database;
 
             // return new SqlConnection(builder.ConnectionString);
-            var connString = _configuration.GetConnectionString("SQLConnection");
+            var connString = _configuration["SQLConnection"];
 
             return new SqlConnection(connString);
         }
