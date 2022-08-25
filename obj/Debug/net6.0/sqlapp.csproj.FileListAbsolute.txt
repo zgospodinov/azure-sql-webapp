@@ -43,3 +43,6 @@ C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\Azure.Security.KeyVault.Secret
 C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\Microsoft.Extensions.Configuration.AzureAppConfiguration.dll
 C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\System.Memory.Data.dll
+C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\Microsoft.FeatureManagement.dll
+C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\Microsoft.FeatureManagement.AspNetCore.dll
+C:\D\udemy-courses\azure-sql-app\obj\Debug\net6.0\sqlapp.MvcApplicationPartsAssemblyInfo.cs

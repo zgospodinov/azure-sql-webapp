@@ -14245,6 +14245,53 @@
         }
       },
       {
+        "HashCode": -1868704933,
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.FeatureManagement.Mvc.TagHelpers.FeatureTagHelper",
+        "AssemblyName": "Microsoft.FeatureManagement.AspNetCore",
+        "Documentation": "\n            <summary>\n            Provides a <![CDATA[<feature>]]> tag that can be used to conditionally render content based on a feature's state.\n            </summary>\n        ",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "feature"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "name",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            A feature name, or comma separated list of feature names, for which the content should be rendered. By default, all specified features must be enabled to render the content, but this requirement can be controlled by the <see cref=\"P:Microsoft.FeatureManagement.Mvc.TagHelpers.FeatureTagHelper.Requirement\" /> property.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Name"
+            }
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "requirement",
+            "TypeName": "Microsoft.FeatureManagement.RequirementType",
+            "IsEnum": true,
+            "Documentation": "\n            <summary>\n            Controls whether 'All' or 'Any' feature in a list of features should be enabled to render the content within the feature tag.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Requirement"
+            }
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "negate",
+            "TypeName": "System.Boolean",
+            "Documentation": "\n            <summary>\n            Negates the evaluation for whether or not a feature tag should display content. This is used to display alternate content when a feature or set of features are disabled.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Negate"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.FeatureManagement.Mvc.TagHelpers.FeatureTagHelper"
+        }
+      },
+      {
         "HashCode": -730659943,
         "Kind": "Components.Bind",
         "Name": "Bind",

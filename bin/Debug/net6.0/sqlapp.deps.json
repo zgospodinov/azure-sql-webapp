@@ -9,6 +9,7 @@
       "sqlapp/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.AzureAppConfiguration": "5.1.0",
+          "Microsoft.FeatureManagement.AspNetCore": "2.5.1",
           "System.Data.SqlClient": "4.8.3"
         },
         "runtime": {
@@ -134,6 +135,29 @@
         }
       },
       "Microsoft.Extensions.Primitives/3.1.18": {},
+      "Microsoft.FeatureManagement/2.5.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Binder": "3.1.18",
+          "Microsoft.Extensions.Logging": "3.1.18"
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.FeatureManagement.dll": {
+            "assemblyVersion": "2.5.1.0",
+            "fileVersion": "2.5.1.0"
+          }
+        }
+      },
+      "Microsoft.FeatureManagement.AspNetCore/2.5.1": {
+        "dependencies": {
+          "Microsoft.FeatureManagement": "2.5.1"
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.FeatureManagement.AspNetCore.dll": {
+            "assemblyVersion": "2.5.1.0",
+            "fileVersion": "2.5.1.0"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/3.1.0": {},
       "Microsoft.Win32.Registry/4.7.0": {
         "dependencies": {
@@ -339,6 +363,20 @@
       "sha512": "sha512-QFvxAK1seL0TeCeZcsld3X8/xPqH4xuMwqzbEkgQK8ChFwM9c8tUHK6JZG7H47UgjaucwV2y8G9IWlX051oOkw==",
       "path": "microsoft.extensions.primitives/3.1.18",
       "hashPath": "microsoft.extensions.primitives.3.1.18.nupkg.sha512"
+    },
+    "Microsoft.FeatureManagement/2.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ERbRjk0etZs4d5Pv17unfogO4iBwV2c/HoBt4jqIJmfbKbmTLV+GbjBPYzidIg2RgYIFi8yA+EoEapSAIOp19g==",
+      "path": "microsoft.featuremanagement/2.5.1",
+      "hashPath": "microsoft.featuremanagement.2.5.1.nupkg.sha512"
+    },
+    "Microsoft.FeatureManagement.AspNetCore/2.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7jV53GPdAMUphiTQX6rIJAdDe8JRb8yRUIbFixYKhqIkcpba4sADMacovOzVWU+SOKeGqWrm5YDpQSNNy6IoDw==",
+      "path": "microsoft.featuremanagement.aspnetcore/2.5.1",
+      "hashPath": "microsoft.featuremanagement.aspnetcore.2.5.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",

@@ -1,36 +1,33 @@
 using System.Data.SqlClient;
 using azure_sql_app.models;
+using Microsoft.FeatureManagement;
 
 namespace azure_sql_app.services
 {
     public interface IProductService
     {
         List<Product> GetProducts();
+        Task<bool> IsBeta();
     }
 
     public class ProductService : IProductService
     {
         private readonly IConfiguration _configuration;
+        private readonly IFeatureManager _featureManager;
 
-        public ProductService(IConfiguration configuration)
+        public ProductService(IConfiguration configuration, IFeatureManager featureManager)
         {
+            _featureManager = featureManager;
             _configuration = configuration;
         }
 
         private SqlConnection GetConnection()
         {
-            // var builder = new SqlConnectionStringBuilder();
-            // builder.DataSource = connString;
-            // builder.UserID = user;
-            // builder.Password = pss;
-            // builder.InitialCatalog = database;
-
-            // return new SqlConnection(builder.ConnectionString);
             var connString = _configuration["SQLConnection"];
 
             return new SqlConnection(connString);
         }
-
+        
         public List<Product> GetProducts()
         {
             // var conn = GetConnection();
@@ -64,5 +61,16 @@ namespace azure_sql_app.services
             return products;
         }
 
+        public async Task<bool> IsBeta()
+        {
+            if (await _featureManager.IsEnabledAsync("beta"))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

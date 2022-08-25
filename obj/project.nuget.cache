@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wyGP+eUobkRFRDPRRCMx0uQlCtj5jCgclVuD79Xu62iizXvo3RcnkeECcAFijwSvwS4Ir6knWy9UE/wqHrfFTQ==",
+  "dgSpecHash": "sI5U65bwmcyOUNLzTsF5IUXJht+ntUC+W8CEfUvDboMSTwYdVd6+R+FCDpj0vGN47XUHIwlUraZkGntIBEoeWg==",
   "success": true,
   "projectFilePath": "C:\\D\\udemy-courses\\azure-sql-app\\sqlapp.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,8 @@
     "C:\\Users\\zgosp\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.18\\microsoft.extensions.logging.abstractions.3.1.18.nupkg.sha512",
     "C:\\Users\\zgosp\\.nuget\\packages\\microsoft.extensions.options\\3.1.18\\microsoft.extensions.options.3.1.18.nupkg.sha512",
     "C:\\Users\\zgosp\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.18\\microsoft.extensions.primitives.3.1.18.nupkg.sha512",
+    "C:\\Users\\zgosp\\.nuget\\packages\\microsoft.featuremanagement\\2.5.1\\microsoft.featuremanagement.2.5.1.nupkg.sha512",
+    "C:\\Users\\zgosp\\.nuget\\packages\\microsoft.featuremanagement.aspnetcore\\2.5.1\\microsoft.featuremanagement.aspnetcore.2.5.1.nupkg.sha512",
     "C:\\Users\\zgosp\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\zgosp\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\zgosp\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
