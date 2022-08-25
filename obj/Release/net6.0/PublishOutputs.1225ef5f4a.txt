@@ -1,0 +1,13 @@
+C:\D\udemy-courses\azure-sql-app\publish\sqlapp.exe
+C:\D\udemy-courses\azure-sql-app\publish\appsettings.Development.json
+C:\D\udemy-courses\azure-sql-app\publish\appsettings.json
+C:\D\udemy-courses\azure-sql-app\publish\sqlapp.dll
+C:\D\udemy-courses\azure-sql-app\publish\sqlapp.deps.json
+C:\D\udemy-courses\azure-sql-app\publish\sqlapp.runtimeconfig.json
+C:\D\udemy-courses\azure-sql-app\publish\sqlapp.pdb
+C:\D\udemy-courses\azure-sql-app\publish\System.Data.SqlClient.dll
+C:\D\udemy-courses\azure-sql-app\publish\runtimes\win-arm64\native\sni.dll
+C:\D\udemy-courses\azure-sql-app\publish\runtimes\win-x64\native\sni.dll
+C:\D\udemy-courses\azure-sql-app\publish\runtimes\win-x86\native\sni.dll
+C:\D\udemy-courses\azure-sql-app\publish\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\D\udemy-courses\azure-sql-app\publish\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

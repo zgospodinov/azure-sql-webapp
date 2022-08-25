@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/99952321-0eb9-4944-a7a8-fd06558e9b0a/microsoft.web/sites/subscriptions/99952321-0eb9-4944-a7a8-fd06558e9b0a/resourceGroups/webapp-rg/providers/Microsoft.Web/sites/webappzg",
+    "appService.deploySubpath": "publish"
+}
