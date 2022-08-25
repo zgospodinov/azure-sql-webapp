@@ -3,22 +3,32 @@ using azure_sql_app.models;
 
 namespace azure_sql_app.services
 {
-    public class ProductService
+    public interface IProductService
     {
-        private static string connString = "appserverdbzg.database.windows.net";
-        private static string user = "demouser";
-        private static string pss = "Pa$$w0rd";
-        private static string database = "appdb";
+        List<Product> GetProducts();
+    }
+
+    public class ProductService : IProductService
+    {
+        private readonly IConfiguration _configuration;
+
+        public ProductService(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
 
         private SqlConnection GetConnection()
         {
-            var builder = new SqlConnectionStringBuilder();
-            builder.DataSource = connString;
-            builder.UserID = user;
-            builder.Password = pss;
-            builder.InitialCatalog = database;
+            // var builder = new SqlConnectionStringBuilder();
+            // builder.DataSource = connString;
+            // builder.UserID = user;
+            // builder.Password = pss;
+            // builder.InitialCatalog = database;
 
-            return new SqlConnection(builder.ConnectionString);
+            // return new SqlConnection(builder.ConnectionString);
+            var connString = _configuration.GetConnectionString("SQLConnection");
+
+            return new SqlConnection(connString);
         }
 
         public List<Product> GetProducts()

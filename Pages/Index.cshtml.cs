@@ -9,10 +9,15 @@ public class IndexModel : PageModel
 {
     public List<Product> Products { get; set; } = new();
 
+    private readonly IProductService _service;
+
+    public IndexModel(IProductService service)
+    {
+        _service = service;
+    }
 
     public void OnGet()
     {
-        ProductService service = new ProductService();
-        Products = service.GetProducts();
+        Products = _service.GetProducts();
     }
 }

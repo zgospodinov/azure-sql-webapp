@@ -31,3 +31,8 @@ C:\D\udemy-courses\azure-sql-app\obj\Debug\net6.0\refint\sqlapp.dll
 C:\D\udemy-courses\azure-sql-app\obj\Debug\net6.0\sqlapp.pdb
 C:\D\udemy-courses\azure-sql-app\obj\Debug\net6.0\sqlapp.genruntimeconfig.cache
 C:\D\udemy-courses\azure-sql-app\obj\Debug\net6.0\ref\sqlapp.dll
+C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\publish\web.config
+C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\publish\appsettings.json
+C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\publish\sqlapp.deps.json
+C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\publish\sqlapp.runtimeconfig.json
