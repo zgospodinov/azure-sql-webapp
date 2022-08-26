@@ -46,3 +46,4 @@ C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\System.Memory.Data.dll
 C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\Microsoft.FeatureManagement.dll
 C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\Microsoft.FeatureManagement.AspNetCore.dll
 C:\D\udemy-courses\azure-sql-app\obj\Debug\net6.0\sqlapp.MvcApplicationPartsAssemblyInfo.cs
+C:\D\udemy-courses\azure-sql-app\bin\Debug\net6.0\Newtonsoft.Json.dll

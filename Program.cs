@@ -7,18 +7,21 @@ var builder = WebApplication.CreateBuilder(args);
 // Requred to connect ot Azure App Configuration
 var azAppConfigConnection = "Endpoint=https://webappconfigzg.azconfig.io;Id=JwA0-l9-s0:GRtuvlnq7+9fSJCnISYs;Secret=GWwu5mhT845NKra9p0uvQC+xJISWTzVesNl+TQzqfCo=";
 
-builder.Host.ConfigureAppConfiguration(builder => {
-    builder.AddAzureAppConfiguration(options => {
-        options.Connect(azAppConfigConnection).UseFeatureFlags();
+builder.Host.ConfigureAppConfiguration(builder =>
+{
+    builder.AddAzureAppConfiguration(options =>
+    {
+        options.Connect(azAppConfigConnection)
+            .UseFeatureFlags();
     });
 
 });
 
 
 // Add services to the container.
+builder.Services.AddTransient<IProductService, ProductService>();
 builder.Services.AddRazorPages();
 builder.Services.AddFeatureManagement();
-builder.Services.AddTransient<IProductService, ProductService>();
 
 var app = builder.Build();
 

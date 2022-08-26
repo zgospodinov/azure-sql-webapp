@@ -20,6 +20,7 @@ public class IndexModel : PageModel
     public void OnGet()
     {
         IsBeta = _service.IsBeta().Result;
-        Products = _service.GetProducts();
+        // Products = _service.GetProducts();
+        Products =  _service.GetProductsAzFunc().Result;
     }
 }

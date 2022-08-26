@@ -1,12 +1,14 @@
 using System.Data.SqlClient;
 using azure_sql_app.models;
 using Microsoft.FeatureManagement;
+using Newtonsoft.Json;
 
 namespace azure_sql_app.services
 {
     public interface IProductService
     {
         List<Product> GetProducts();
+        Task<List<Product>> GetProductsAzFunc();
         Task<bool> IsBeta();
     }
 
@@ -27,11 +29,21 @@ namespace azure_sql_app.services
 
             return new SqlConnection(connString);
         }
+
+        public async Task<List<Product>> GetProductsAzFunc(){
+            var funcUrl = "https://appfzg.azurewebsites.net/api/GetProducts?code=FgU-6A6atRGhmgr-qG9KTs9J8QlYA1K9y5DGaKRsLFh2AzFu_qZ-0g==";
+
+            using (HttpClient client = new HttpClient()){
+                var response = await client.GetAsync(funcUrl);
+
+                var content =await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<Product>>(content);
+            }
+        }
+        
         
         public List<Product> GetProducts()
         {
-            // var conn = GetConnection();
-
 
             using SqlConnection conn = GetConnection();
 
