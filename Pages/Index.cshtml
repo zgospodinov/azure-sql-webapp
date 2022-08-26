@@ -20,6 +20,9 @@
             </tr>
         </thead>
         <tbody>
+            @if(Model.Products.Count == 0){
+                <h2>No content - check Azure Functions!</h2>
+            }
             @foreach(var product in Model.Products){
                 <tr>
                     <th scope="row">@product.ProductID</th>

@@ -37,6 +37,13 @@ namespace azure_sql_app.services
                 var response = await client.GetAsync(funcUrl);
 
                 var content =await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    var emptyResult = Enumerable.Empty<Product>().ToList();
+
+                    return await Task.FromResult<List<Product>>(emptyResult);
+                }
                 return JsonConvert.DeserializeObject<List<Product>>(content);
             }
         }
